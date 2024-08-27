@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비밀번호 입력</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container active" id="passwordContainer">
+    <h2>비밀번호를 입력하세요</h2>
+    <input type="password" id="passwordInput" placeholder="힌트:4자리">
+    <button onclick="checkPassword()">확인</button>
+</div>
+
+<div class="button-container hidden" id="buttonContainer">
+    <h2>홈 화면</h2>
+    <button onclick="showSlider(1)">코코아톡</button>
+    <button onclick="showSlider(2)">인별그램</button>
+</div>
+
+<div class="slider-container hidden" id="sliderContainer">
+    <img src="" id="image1" class="active" alt="Image 1">
+    <img src="" id="image2" alt="Image 2">
+    <br>
+    <button id="nextButton" onclick="nextImage()">다음 이미지</button>
+    <button onclick="goBackToButtons()">뒤로 가기</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

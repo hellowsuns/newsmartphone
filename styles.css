@@ -1,0 +1,72 @@
+/* 페이지 전체에 적용되는 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* 모든 컨테이너가 중앙에 배치되도록 조정 */
+.container, .button-container, .slider-container {
+    text-align: center;
+    display: none; /* 초기에는 모든 컨테이너를 숨깁니다 */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* active 클래스를 적용받은 컨테이너만 보이게 합니다 */
+.active {
+    display: block;
+}
+
+/* 비밀번호 입력 필드 스타일 */
+input[type="password"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* 버튼 스타일 */
+button {
+    padding: 10px 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* 이미지 스타일 */
+img {
+    width: 500px;
+    height: auto;
+    margin: 10px;
+}
+
+/* 슬라이더 컨테이너의 이미지 스타일 */
+.slider-container img {
+    display: none; /* 초기에는 모든 이미지를 숨깁니다 */
+}
+
+.slider-container img.active {
+    display: block; /* active 클래스가 있는 이미지만 보이게 합니다 */
+}
+
+/* 숨김 스타일 */
+.hidden {
+    display: none !important;
+}
