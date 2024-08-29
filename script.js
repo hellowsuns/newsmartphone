@@ -41,6 +41,16 @@ function showSlider(buttonNumber) {
     document.getElementById("sliderContainer").classList.add("active");
 }
 
+function showGallery() {
+    // 버튼 컨테이너 숨기기
+    document.getElementById("buttonContainer").classList.remove("active");
+    document.getElementById("buttonContainer").classList.add("hidden");
+
+    // 갤러리 컨테이너 보이기
+    document.getElementById("galleryContainer").classList.remove("hidden");
+    document.getElementById("galleryContainer").classList.add("active");
+}
+
 function nextImage() {
     const image1 = document.getElementById("image1");
     const image2 = document.getElementById("image2");
@@ -58,6 +68,10 @@ function goBackToButtons() {
     document.getElementById("sliderContainer").classList.remove("active");
     document.getElementById("buttonContainer").classList.remove("hidden");
     document.getElementById("buttonContainer").classList.add("active");
+
+    // 갤러리 컨테이너 숨기기
+    document.getElementById("galleryContainer").classList.remove("active");
+    document.getElementById("galleryContainer").classList.add("hidden");
 }
 
 function goBack() {
