@@ -10,7 +10,7 @@ body {
 }
 
 /* 모든 컨테이너가 중앙에 배치되도록 조정 */
-.container, .button-container, .slider-container {
+.container, .button-container, .slider-container, .gallery-container {
     text-align: center;
     display: none; /* 초기에는 모든 컨테이너를 숨깁니다 */
     background-color: #ffffff;
@@ -64,6 +64,13 @@ img {
 
 .slider-container img.active {
     display: block; /* active 클래스가 있는 이미지만 보이게 합니다 */
+}
+
+/* 갤러리 컨테이너의 이미지 스타일 */
+.gallery-container img {
+    width: 400px;
+    height: auto;
+    margin: 10px;
 }
 
 /* 숨김 스타일 */
